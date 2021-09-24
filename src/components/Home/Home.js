@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Product from '../Product/Product';
-import { Row, Container, Spinner } from 'react-bootstrap';
+import { Row, Container, Spinner, Col } from 'react-bootstrap';
 import './Home.css';
 import { useHistory } from 'react-router-dom';
 
@@ -24,7 +24,11 @@ const Header = () => {
         <Container>
 
             {
-                loading ? <Spinner className="loading" animation="border" variant="success" /> :
+                loading ? 
+                <Row>
+                    <Col></Col>
+                    <Col><Spinner className="loading" animation="border" variant="success" /></Col>
+                </Row> :
                     <Row>
                         {
                             products.map(product => <Product handleProductSelect={handleProductSelect} key={product._id} product={product}></Product>)

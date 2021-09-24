@@ -1,5 +1,5 @@
-# Welcome to Public Transport!
-    This is a ride sharing platform.
+# Welcome to Better Buys Code!
+    This is Buy and Sell type website.
 # Used languages 
     1. HTMl5
     2. CSS3
@@ -7,4 +7,12 @@
 # Used framework
     1. React
     2. Bootstrap
-# Live site link: https://public-transport-b7b31.web.app/
+    3. React Bootstrap
+    4. Material-ui
+# Add user and data by
+    1. firebase
+    2. mongodb
+    3. heroku
+# For backend
+    1. Node JS
+# Live site link: https://better-buys-cbd4f.web.app/
