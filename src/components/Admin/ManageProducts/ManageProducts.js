@@ -5,17 +5,17 @@ import { Card, Col, Row, Container } from 'react-bootstrap';
 const ManageProducts = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:5000/products")
+        fetch("https://morning-castle-00405.herokuapp.com/products")
             .then(res => res.json())
             .then(data => setProducts(data))
     }, []);
     const handleDeleteProduct = (id) => {
-        fetch(`http://localhost:5000/deleteProduct/${id}`, {
+        fetch(`https://morning-castle-00405.herokuapp.com/deleteProduct/${id}`, {
             method: "DELETE"
         })
             .then(res => res.json())
             .then(result => {
-                if(result){
+                if (result) {
                     console.log(result);
                 }
             })

@@ -7,7 +7,7 @@ import { useHistory } from 'react-router-dom';
 const Header = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:5000/products")
+        fetch("https://morning-castle-00405.herokuapp.com/products")
             .then(response => response.json())
             .then(data => setProducts(data))
     }, []);
