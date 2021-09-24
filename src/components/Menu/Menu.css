@@ -1,7 +1,11 @@
+.nav-bg{
+    background-color: #111827;
+    margin-bottom: 30px;
+}
 .nav-brand{
     font-size: 35px;
     text-decoration: none;
-    color: #9DE4F6;
+    color: #D8D9DB;
     font-weight: 600;
 }
 .menu-item{
@@ -9,16 +13,16 @@
     margin-right: 10px;
     text-decoration: none;
     font-weight: 500;
-    color: #9CE3F6;
+    color: #D8D9DB;
 }
 .menu-btn{
     text-decoration: none;
 }
 .profile{
-    text-decoration: none;
-    font-weight: 700;
-    margin-left: 10px;
+    margin-left: 20px;
 }
-.profile:hover{
-    color: #FFBC27 !important;
+.profile img{
+    height:45px;
+    width:45px;
+    border-radius:50%;
 }

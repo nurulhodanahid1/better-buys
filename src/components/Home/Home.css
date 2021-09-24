@@ -4,3 +4,6 @@ body {
 .card-gap{
     margin-bottom:20px;
 }
+.loading{
+    margin: 200px 0 0 500px;
+}

@@ -1,9 +1,12 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
 
 const Deals = () => {
     return (
         <div>
-            <h2>Deals area coming soon....!!!</h2>
+            <Container>
+                <h2>Deals area coming soon....!!!</h2>
+            </Container>
         </div>
     );
 };

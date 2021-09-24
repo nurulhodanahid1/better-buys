@@ -2,6 +2,7 @@ import React from 'react';
 import { useForm } from "react-hook-form";
 import {useState} from 'react';
 import axios from "axios";
+import { Col, Row } from 'react-bootstrap';
 
 const AddProducts = () => {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
@@ -45,16 +46,28 @@ const AddProducts = () => {
     return (
         <div>
             <h3>Add your products</h3>
+            <hr />
             <form onSubmit={handleSubmit(onSubmit)}>
-                <p>Product name</p>
-                <input defaultValue="New exiting event" name="name" {...register("name")} />
-                <p>Product image</p>
-                <input type="file" onChange={handleImageUpload} />
-                <p>Product price</p>
-                <input type="number" defaultValue="00" price="price" {...register("price")} />
-                <br />
-
-                <input type="submit" />
+                <Row>
+                    <Col><h5>Product name:</h5></Col>
+                    <Col><input defaultValue="New exiting event" name="name" {...register("name")} /></Col>
+                </Row>
+                <hr />
+                <Row>
+                    <Col><h5>Add image:</h5></Col>
+                    <Col><input type="file" onChange={handleImageUpload} /></Col>
+                </Row>
+                <hr />
+                <Row>
+                    <Col><h5>Add price:</h5></Col>
+                    <Col><input type="number" defaultValue="00" price="price" {...register("price")} /></Col>
+                </Row>
+                <hr />
+                
+                <Row>
+                    <Col></Col>
+                    <Col><input className="btn btn-primary" type="submit" /></Col>
+                </Row>
             </form>
         </div>
     );

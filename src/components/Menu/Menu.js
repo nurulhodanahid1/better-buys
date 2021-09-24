@@ -9,12 +9,12 @@ const Menu = () => {
     const [signInUser, setSignInUser] = useContext(UserContext);
     return (
         <div>
-            <Navbar expand="lg">
+            <Navbar className="nav-bg" expand="lg">
                 <Container>
                     <Navbar.Brand><Link className="nav-brand" to="/">Better Buys</Link></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
-                        <Nav>
+                        <Nav className="justify-content-center align-items-center">
                             <Nav.Link><Link className="menu-item" to="/home">Home</Link></Nav.Link>
                             <Nav.Link><Link className="menu-item" to="/orders">Orders</Link></Nav.Link>
                             <Nav.Link><Link className="menu-item" to="/admin">Admin</Link></Nav.Link>
@@ -25,7 +25,7 @@ const Menu = () => {
                             }
                             {
                                 signInUser.name && <Navbar.Text>
-                                    <Link style={{color:"#326FC7"}} className="profile" to="/profile">{signInUser.name}</Link>
+                                    <Link className="profile" to="/profile"><img src={signInUser.photo} alt="" /></Link>
                             </Navbar.Text>
                             }
                         </Nav>

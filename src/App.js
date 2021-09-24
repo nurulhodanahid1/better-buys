@@ -11,6 +11,7 @@ import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import Orders from './components/Orders/Orders';
 import Deals from './components/Deals/Deals';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Checkout from './components/Checkout/Checkout';
 
 export const UserContext = createContext();
 
@@ -27,8 +28,8 @@ function App() {
             <Route path="/login">
               <Login></Login>
             </Route>
-            <PrivateRoute path="/orders/:productId">
-              <Orders></Orders>
+            <PrivateRoute path="/checkout/:productId">
+              <Checkout></Checkout>
             </PrivateRoute>
             <PrivateRoute path="/orders">
               <Orders></Orders>
