@@ -52,7 +52,7 @@ function Login() {
     return (
         <div className="login-area text-center">
             <h3>Please Log In Here!</h3>
-            <button className="login-btn btn btn-success" onClick={googleSignIn}><span className="google-icon"><img src={googleIcon} alt="" /></span> Login with Google</button>
+            <button className="login-btn btn btn-light" onClick={googleSignIn}><span className="google-icon"><img src={googleIcon} alt="" /></span> Login with Google</button>
         </div>
     );
 }

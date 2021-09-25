@@ -5,10 +5,10 @@
 .login-btn{
     border-radius: 10px;
     padding: 10px;
-    border: 2px solid #4285F4;
     font-size: 20px;
-    border: 2px solid green;
     font-weight: 400;
+    border: 2px solid #157347 !important;
+    padding: 5px 20px !important;
 }
 .login-btn:hover{
     color: #4285F4;
