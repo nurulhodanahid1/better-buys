@@ -14,7 +14,7 @@ const Admin = () => {
                 <div>
                     <div className="admin-menu">
                         <ul>
-                            <li><h3>Better Buys</h3></li>
+                            <li><h4>Product add and edit here!!</h4></li>
                             <li>
                                 <Link to="/admin/addProducts">Add Products</Link>
                             </li>

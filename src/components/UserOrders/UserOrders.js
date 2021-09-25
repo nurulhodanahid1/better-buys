@@ -6,9 +6,9 @@ const UserOrders = (props) => {
     return (
         <div>
             <Row>
-            <Col>{name}</Col>
-            <Col>1</Col>
-            <Col>${price}</Col>
+            <Col><h5>{name}</h5></Col>
+            <Col><h5>1</h5></Col>
+            <Col><h5>${price}</h5></Col>
         </Row>
         <hr />
         </div>

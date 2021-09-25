@@ -12,7 +12,7 @@ const Menu = () => {
             <Navbar className="nav-bg" expand="lg">
                 <Container>
                     <Navbar.Brand><Link className="nav-brand" to="/">Better Buys</Link></Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                     <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
                         <Nav className="justify-content-center align-items-center">
                             <Nav.Link><Link className="menu-item" to="/home">Home</Link></Nav.Link>
@@ -20,8 +20,8 @@ const Menu = () => {
                             <Nav.Link><Link className="menu-item" to="/admin">Admin</Link></Nav.Link>
                             <Nav.Link><Link className="menu-item" to="/deals">Deals</Link></Nav.Link>
                             {
-                                signInUser.email ? <Link className="menu-btn" to="/home"><Button className="login-button" onClick={()=>setSignInUser({})} variant="primary">Logout</Button></Link>
-                                : <Link className="menu-btn" to="login"><Button className="login-button">Login</Button></Link>
+                                signInUser.email ? <Link className="menu-btn" to="/home"><Button className="login-button" onClick={()=>setSignInUser({})} variant="success">Log out</Button></Link>
+                                : <Link className="menu-btn" to="login"><Button className="login-button btn btn-success">Log in</Button></Link>
                             }
                             {
                                 signInUser.name && <Navbar.Text>

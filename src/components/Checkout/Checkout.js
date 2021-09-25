@@ -14,9 +14,9 @@ const Checkout = () => {
             .then(data => setProducts(data))
     }, []);
     const productDetail = products.find(product => product._id === productId);
-
+    const orderDate = new Date();
     const handleOrderCheckout = () => {
-        const newOrder = { ...signInUser, ...productDetail };
+        const newOrder = { ...signInUser, ...productDetail, orderDate };
         fetch('https://morning-castle-00405.herokuapp.com/addOrders', {
             method: 'POST',
             headers: {
@@ -36,20 +36,20 @@ const Checkout = () => {
                 <Card style={{ width: '40rem' }}>
                     <Card.Body>
                         <Row>
-                            <Col>Description</Col>
-                            <Col>Quantity</Col>
-                            <Col>Price</Col>
+                            <Col><h5>Description</h5></Col>
+                            <Col><h5>Quantity</h5></Col>
+                            <Col><h5>Price</h5></Col>
                         </Row>
                         <hr />
                         <Row>
-                            <Col>{productDetail?.name}</Col>
-                            <Col>1</Col>
-                            <Col>${productDetail?.price}</Col>
+                            <Col><h5>{productDetail?.name}</h5></Col>
+                            <Col><h5>1</h5></Col>
+                            <Col><h5>${productDetail?.price}</h5></Col>
                         </Row>
                         <hr />
                         <Row>
-                            <Col xs={12} md={8}>Total</Col>
-                            <Col xs={6} md={4}>${productDetail?.price}</Col>
+                            <Col xs={12} md={8}><h5>Total</h5></Col>
+                            <Col xs={6} md={4}><h5>${productDetail?.price}</h5></Col>
                         </Row>
                     </Card.Body>
                 </Card>

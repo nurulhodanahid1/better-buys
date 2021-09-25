@@ -15,14 +15,24 @@
     font-weight: 500;
     color: #D8D9DB;
 }
+.nav-brand:hover, .menu-item:hover{
+    color: #157347;
+}
 .menu-btn{
     text-decoration: none;
+    margin-right: 20px;
 }
 .profile{
-    margin-left: 20px;
+    margin-left: 0px;
 }
 .profile img{
     height:45px;
     width:45px;
     border-radius:50%;
 }
+.navbar-light .navbar-toggler {
+    color: #5EF1E8 !important;
+}
+.navbar-toggler-icon {
+    background-image: url("./kisspng-vector-graphics-button-royalty-free-illustration-c-5c526a415cc2c3.49229711154890502538\ \(1\).png") !important;
+ }
