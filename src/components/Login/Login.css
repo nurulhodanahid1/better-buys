@@ -1,15 +1,16 @@
 .google-icon img{
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
 }
 .login-btn{
     border-radius: 10px;
     padding: 10px;
     border: 2px solid #4285F4;
     font-size: 20px;
+    border: 2px solid green;
+    font-weight: 400;
 }
 .login-btn:hover{
-    border: 2px solid #c4574d;
     color: #4285F4;
 }
 
