@@ -9,7 +9,7 @@ const ManageProducts = () => {
             .then(res => res.json())
             .then(data => setProducts(data))
     }, []);
-    const handleDeleteProduct = (e, id) => {
+    const handleDeleteProduct = (id) => {
         fetch(`https://morning-castle-00405.herokuapp.com/deleteProduct/${id}`, {
             method: "DELETE"
         })
