@@ -15,4 +15,4 @@
     3. heroku
 # For backend
     1. Node JS
-# Live site link: https://better-buys-cbd4f.web.app/
+# Live site link: Coming soon 😉
