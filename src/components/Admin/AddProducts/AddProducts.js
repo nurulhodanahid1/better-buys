@@ -66,7 +66,7 @@ const AddProducts = () => {
                 
                 <Row>
                     <Col></Col>
-                    <Col><input className="btn btn-primary" type="submit" /></Col>
+                    <Col><input className="btn btn-success" type="submit" /></Col>
                 </Row>
             </form>
         </div>

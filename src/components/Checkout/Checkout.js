@@ -55,7 +55,7 @@ const Checkout = () => {
                 </Card>
                 <Row>
                     <Col xs={12} md={6}></Col>
-                    <Col xs={6} md={6}><Button onClick={handleOrderCheckout} className="checkout-btn" variant="primary">Checkout</Button></Col>
+                    <Col xs={6} md={6}><Button onClick={handleOrderCheckout} className="checkout-btn" variant="success">Checkout</Button></Col>
                 </Row>
             </Container>
         </div>
