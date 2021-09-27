@@ -17,6 +17,7 @@ const Checkout = () => {
     const orderDate = new Date();
     const handleOrderCheckout = () => {
         const newOrder = { ...signInUser, ...productDetail, orderDate };
+        delete newOrder._id;
         fetch('https://morning-castle-00405.herokuapp.com/addOrders', {
             method: 'POST',
             headers: {
