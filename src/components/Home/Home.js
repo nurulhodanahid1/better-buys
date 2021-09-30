@@ -26,7 +26,7 @@ const Header = () => {
                 <div className="input-group mb-3">
                     <input type="text" name="" id="" className="form-control" placeholder="Search your products" />
                     <div className="input-group-append">
-                        <button id="find-meal" type="button" className="btn btn-success">Search</button>
+                        <button type="button" className="btn btn-success">Search</button>
                     </div>
                 </div>
             </form>
